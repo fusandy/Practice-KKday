@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+}
+header{
+    border-bottom: 1px solid #e5e6e9a8;
+}
+header .row{
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+header .col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 9%;
+    height: 100%;
+    padding-top: 0.5rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.header-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem;
+}
+.header-nav a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight:600;
+    color: #727272;
+}
+.header-nav .header-nav-mobile{
+    color: #639998;
+    font-weight: bold;
+}
+.header-nav li {
+    padding-left: 1.2rem;
+}
+.header-nav .fas{
+    padding-left: 0.5rem;
+}
+.header-nav .fa-mobile-alt{
+    padding-right: 0.5rem;
+}
+.navbar-category{
+    padding-left: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.navbar-category a{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+.navbar-category a:hover{
+    color: #26BEC9;
+}
+.navbar-category .ticket{
+    font-size: 0.7rem;
+    font-weight:600;
+}
+.navbar-category-item{
+    font-size: 0.7rem;
+    font-weight:600;
+    margin-left: 0.8rem;
+    padding-left: 0.8rem;
+    border-left: 1px solid #e5e6e9a8;
+}
+.banner{
+    width: 100%;
+    min-height: 300px;
+    background-image: url("/imgs/4.jpg");
+    opacity: 0.9;
+    background-position: 80% 70%;
+    background-size: cover;
+}
+.cover{
+    width: 100%;
+    background-color:rgba(71, 96, 122, 0.363);
+}
+.search-area{
+    padding: 5rem 22rem;
+    text-align: center;
+}
+.slogan{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    text-shadow: 5px 5px 10px gray;
+}
+.description{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-shadow: 5px 5px 10px gray;
+}
+.searchbar{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.btn{
+    background-color: #26BEC9;
+    color:white;
+    width: 10%;
+}
+input{
+    border: none;
+    width: 28rem;
+    height: 2rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 0.5rem;
+}
+input::-webkit-input-placeholder{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #727272;
+}
+.btn{
+    width: 3.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 0.3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #2b8392;
+    color:white;
+}
+
+
