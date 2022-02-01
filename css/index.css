@@ -1,6 +1,4 @@
-body{
-    margin: 0;
-}
+/* Header */
 header{
     border-bottom: 1px solid #e5e6e9a8;
 }
@@ -30,7 +28,6 @@ header .col{
     margin: 0.8rem;
 }
 .header-nav a{
-    text-decoration: none;
     font-size: 0.7rem;
     font-weight:600;
     color: #727272;
@@ -48,6 +45,7 @@ header .col{
 .header-nav .fa-mobile-alt{
     padding-right: 0.5rem;
 }
+/* Navbar */
 .navbar-category{
     padding-left: 10rem;
     padding-top: 1rem;
@@ -74,6 +72,7 @@ header .col{
     padding-left: 0.8rem;
     border-left: 1px solid #e5e6e9a8;
 }
+/* Banner */
 .banner{
     width: 100%;
     min-height: 300px;
@@ -81,10 +80,11 @@ header .col{
     opacity: 0.9;
     background-position: 80% 70%;
     background-size: cover;
+    margin-bottom: 1rem;
 }
 .cover{
     width: 100%;
-    background-color:rgba(71, 96, 122, 0.363);
+    background-color:rgba(99, 153, 151, 0.493);
 }
 .search-area{
     padding: 5rem 22rem;
@@ -106,7 +106,6 @@ header .col{
 }
 .searchbar{
     display: flex;
-    /* justify-content: space-between; */
 }
 .btn{
     background-color: #26BEC9;
@@ -137,5 +136,84 @@ input::-webkit-input-placeholder{
     background-color: #2b8392;
     color:white;
 }
-
-
+/* 熱門活動分類 */
+.category-card{
+    width: 9rem;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(221, 218, 218, 0.685);
+    margin-right: 0.7rem;
+}
+.category-card img{
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+    transition: 0.3s;
+}
+.category-card-title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    padding: 0.5rem 0.8rem;
+}
+.category-card:hover img{
+    opacity: 0.8;
+}
+.hot-activity-category-card-carousel{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+}
+/* 最新旅遊優惠 */
+.latest-discount-card{
+    width: 18.5rem;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(221, 218, 218, 0.685);
+    margin-right: 0.9rem;
+}
+.latest-discount-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.latest-discount-carousel{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+}
+/* Top 10熱門商品 */
+.top-10-product-label{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 45%;
+}
+.top-10-product-label img{
+    width: 100%;
+    object-fit: cover;
+}
+.label-number{
+    position: absolute;
+    top: 15%;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: white;
+}
+.top-10-product-carousel{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    height: 350px;
+}
