@@ -126,10 +126,18 @@ h3{
 .wintervacation-carousel,
 .littleprince-carousel,
 .amusementpark-carousel,
-.bestprovider-carousel{
+.bestprovider-carousel,
+.hot-city-carousel{
     display: flex;
     justify-content: start;
     align-items: center;
     overflow: hidden;
     height: 350px;
+}
+.latest-view-carousel{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
 }
