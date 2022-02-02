@@ -107,10 +107,18 @@ header .col{
 .searchbar{
     display: flex;
 }
-.btn{
+.search-bar-btn{
     background-color: #26BEC9;
+    border: none;
     color:white;
     width: 10%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-bar-btn:hover{
+    background-color: #2b8392;
 }
 input{
     border: none;
@@ -124,17 +132,6 @@ input::-webkit-input-placeholder{
     font-size: 0.7rem;
     font-weight: 600;
     color: #727272;
-}
-.btn{
-    width: 3.5rem;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-top: 0.3rem;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: #2b8392;
-    color:white;
 }
 /* 熱門活動分類 */
 .category-card{
@@ -174,7 +171,7 @@ input::-webkit-input-placeholder{
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 2px 5px 10px rgba(221, 218, 218, 0.685);
-    margin-right: 0.9rem;
+    margin-right: 1rem;
 }
 .latest-discount-card img{
     width: 100%;
@@ -191,29 +188,209 @@ input::-webkit-input-placeholder{
 /* Top 10熱門商品 */
 .top-10-product-label{
     width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     right: 5px;
-    top: 45%;
+    top: 40%;
 }
 .top-10-product-label img{
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 .label-number{
     position: absolute;
-    top: 15%;
+    top: 17%;
     font-weight: bold;
     font-size: 0.9rem;
     color: white;
 }
-.top-10-product-carousel{
+/* 為什麼選擇KKday? */
+.why-kkday{
+    background-color: #f5f5f5;
+    margin-top: 2rem;
+}
+.why-kkday .container{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    height: 350px;
+    padding:2.5rem 9rem ;
+    position: relative;
+}
+.why-area-text{
+    width: 50%;
+}
+.why-area-img{
+    width: 50%;
+}
+.why-area-description{
+    color: #727272;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.why-area-btn{
+    border: none;
+    width: 9rem;
+    height: 2.5rem;
+    background-color: #26BEC9;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px rgba(221, 218, 218, 0.685);
+    transition: 0.5s;
+}
+.why-area-btn:hover{
+    background-color: #2b8392;
+}
+.why-area-img{
+    display: flex;
+    justify-content: center;
+}
+.why-area-img img{
+    position: absolute;
+    top: -50px;
+}
+/* Footer Link */
+.footer-link .container{
+    padding:2.5rem 9rem ;
+}
+.footer-link-title{
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.footer-link-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+.footer-link-item a{
+    color: #666;
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding-right: 10px;
+    margin-left: 10px;
+    border-right: 1px solid #666;
+}
+/* Footer */
+.footer{
+    background-color: #444;
+}
+.footer .container{
+    padding-right: 9rem ;
+    padding-left: 9rem ;
+}
+.footer-subscribe-row{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid #666;
+    padding: 2rem 0;
+}
+.subscribe-text-area{
+    margin-right: 1rem;
+}
+.subscribe-text{
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.subscribe-agreement{
+    color: #999;
+    font-size: 0.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+.subscribe-input-area{
+    width: 32%;
+    display: flex;
+}
+.email-input{
+    width: 15rem;
+}
+.subscribe-btn{
+    width: 4rem;
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    padding: 9px 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.footer-links-row{
+    border-bottom: 1px solid #666;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+h4{
+    color: #999;
+    font-size: 0.9rem;
+}
+.footer-know-kkday-list{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-know-kkday-item a{
+    color: #fff;
+    font-size: 0.7rem;
+}
+.footer-know-kkday-media{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.footer-media-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #777;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-media-item .fab{
+    color: #fff;
+}
+.footer-copy-right-row p{
+    color: #999;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+.company-info{
+    background-color: #333;
+    padding:0.5rem 9rem ;
+}
+.register-info{
+    margin-right: 5rem;
+}
+.register-info ul{
+    list-style: none;
+    padding: 0;
+}
+.register-info li{
+    color: #aaaaaa;
+    font-size: 0.4rem;
+    font-weight: bold;
+    line-height: 20px;
+}
+.register-info-row{
+    display: flex;
+
 }
